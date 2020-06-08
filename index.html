@@ -4,10 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/style.scss">
-    <script src="./js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="./js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <form class="resume">
+          <div class="form-group">
+            <label for="firstname">Имя</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstname"
+              name="firstname"
+              placeholder="Введите ваше имя ..."
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <div class="alert alert-danger mt-2">
+              Введите ваше имя, количество символов от 2 до 25
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Фамилия</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              name="lastname"
+              placeholder="Введите вашу фамилию ..."
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <div class="alert alert-danger mt-2">
+              Введите вашу фамилию, количество символов от 2 до 25
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="number">Возраст</label>
+            <input
+              type="number"
+              class="form-control"
+              id="number"
+              name="age"
+              placeholder="Введите ваш возраст ..."
+              min="12"
+              max="80"
+            />
+            <div class="alert alert-danger mt-2">
+              Введите корректный возраст
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Radio">Введите ваш пол</label>
+            <input type="radio" id="genderMan"
+            name="gender" value="man">
+            <label for="genderMan">Мужчина</label>
+            
+            <input type="radio" id="genderWoman"
+            name="gender" value="woman">
+            <label for="genderWoman">Женщина</label>
+            
+            <input type="radio" id="genderNoyDefined"
+            name="gender" value="notDefined">
+            <label for="genderNotDefined">Не определился</label>
+        
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="Введите ваш номер телефона ..."
+              minlength="7"
+              maxlength="12"
+              required
+            />
+            <div class="alert alert-danger mt-2">
+              Введите корректный номер телефона
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Введите ваш email ..."
+              required
+            />
+            <div class="alert alert-danger mt-2">
+              Введите корректный email
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Расскажите о себе</label>
+            <input
+              type="text"
+              class="form-control"
+              id="text"
+              name="text"
+              placeholder=" Краткая история о вас..."
+              min="5"
+              max="500"
+              required
+            />
+            <div class="alert alert-danger mt-2">
+              Введите корректный email
+            </div>
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="termsAccepted"
+              name="termsAccepted"
+              required
+            />
+            <label for="termsAccepted">Пользовательское соглашение</label>
+            <div class="alert alert-danger mt-2">
+              Вам надо принять соглашение
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+      </div>
     
 </body>
 </html>

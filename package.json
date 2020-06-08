@@ -7,7 +7,7 @@
     "dev": "parcel index.html --open",
     "build": "parcel build index.html",
     "lint": "eslint .js",
-    "lint:fix": "eslint ./js --fix"
+    "lint:fix": "eslint './js --fix"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +17,13 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.1.0",
+    "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-babel": "^9.0.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "prettier": "2.0.5"
+    "eslint-plugin-import": "^2.21.1",
+    "prettier": "2.0.5",
+    "sass": "^1.26.8"
   },
   "repository": {
     "type": "git",
